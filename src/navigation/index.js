@@ -18,6 +18,8 @@ import AppLaunch from '@containers/Launch/LaunchContainer';
 import Placeholder from '@components/general/Placeholder';
 import AuthScenes from './auth';
 import TabsScenes from './tabs';
+import RequestsScenes from './requests';
+import UsersScenes from './user';
 
 /* Routes ==================================================================== */
 export default Actions.create(
@@ -35,9 +37,12 @@ export default Actions.create(
     {/* Main App */}
     <Scene key={'app'} {...AppConfig.navbarProps} title={AppConfig.appName} hideNavBar={false} type={ActionConst.RESET}>
       {/* Drawer Side Menu */}
-      <Scene key={'home'} component={Drawer} initial={'tabBar'}>
+      <Scene key={'home'} component={Drawer} initial={'requests'}>
         {/* Tabbar */}
-        {TabsScenes}
+          { RequestsScenes }
+        {/*{ TabsScenes }*/}
+          {/*{ UsersScenes }*/}
+
       </Scene>
 
       {/* General */}
@@ -49,5 +54,9 @@ export default Actions.create(
         analyticsDesc={'Placeholder: Coming Soon'}
       />
     </Scene>
+
+
+
+
   </Scene>,
 );

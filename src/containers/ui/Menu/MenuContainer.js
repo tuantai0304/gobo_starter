@@ -16,6 +16,7 @@ import MenuRender from './MenuView';
 // Authenticated User Menu
 const authMenu = [
   { title: 'Update Profile', onPress: () => { Actions.updateProfile(); } },
+  { title: 'Submit Request', onPress: () => { Actions.requests(); } },
   { title: 'Change Password', onPress: () => { Actions.passwordReset(); } },
 ];
 

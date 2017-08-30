@@ -56,7 +56,7 @@ const scenes = (
       key={'updateProfile'}
       title={'Update Profile'}
       clone
-      component={UpdateProfileForm}
+      component={ UpdateProfileForm }
       analyticsDesc={'Update Profile'}
     />
   </Scene>
